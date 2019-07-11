@@ -1,12 +1,7 @@
  <p><%= "ADMIN" if @user.admin %></p>
 Name: <%=@user.name%>
 Nausea: <%=@user.nausea unless @user.admin%>
-Mood : happy <%=@user.happiness unless @user.admin %>
+Mood : happy<%=@user.happiness unless @user.admin %>
 Tickets: <%=@user.tickets unless @user.admin%>
 Height: <%=@user.height unless @user.admin%> inches
-<div>
- 
- 
-
-
-</div>
+<%= link_to "See attractions", attractions_path %>
